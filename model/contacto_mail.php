@@ -8,7 +8,8 @@ require '../vendor/autoload.php';
 $name2 = $_POST['name'];
 $email2 = $_POST['email'];
 $mensaje = $_POST['msg'];
-$asunto = $_POST['subject'];
+$interes = $_POST['select'];
+$numero = $_POST['phone'];
 
 /* Desarrollo */
 $api_key = 'key-eb656047b090ea091ef7c5d2fbd83dc5';
@@ -18,11 +19,12 @@ $send_to = 'hola@blick.com';
 $name = $name2;
 $email = $email2;
 $content = $mensaje;
-$subject = $asunto;
+$select = $interes;
+$phone = $phone;
 
 
 
-$messageBody = "De: $name ($email)\n\n $content";
+$messageBody = "De: $name ($email)\n\n $content \n\n Interés: $select \n\n Número: $phone";
 
 $config = array();
 $config['api_key'] = $api_key;
@@ -32,7 +34,6 @@ $message = array();
 $message['from'] = $email;
 $message['to'] = $send_to;
 $message['h:Reply-To'] = $email;
-$message['subject'] = $subject;
 $message['text'] = $messageBody;
 
 $curl = curl_init();
