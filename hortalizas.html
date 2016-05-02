@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rancho Lucero | Hortalizas</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+
+<body id="hortalizas">
+ 
+ <!--------------------
+     Menu and Contact Form
+     --------------------->
+  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+              MENÚ
+            </button>
+          </div>
+
+          <div class="navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch hamburger hamburger-collapse" id="js-bootstrap-offcanvas">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <ul class="nav navbar-nav">
+              <p class="menu-title">MENÚ</p>
+              <li><a href="index.html">Rancho Lucero</a></li>
+              <li><a href="quienes-somos.html">Quiénes somos</a></li>
+              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestras empresas <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="#">Producción de Hortalizas</a></li>
+                  <li><a href="establo-lechero.html">Establo Lechero</a></li>
+                  <li><a href="estacion-de-granos.html">Estación de Granos</a></li>
+                  <li><a href="engorda.html">Engorda</a></li>
+                  <li><a href="planta-de-leche.html">Planta de Leche</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contacto</a></li>
+            </ul>
+
+          </div>
+          <!-- / .navbar-offcanvas .navbar-offcanvas-touch -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      
+      <!-- Modal -->
+      <div id="contactModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Contacto</h4>
+            </div>
+
+            <div class="modal-body">
+               <form>
+                <div class="form-group">
+                  <label for="nombre"></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                  <label for="correo-electronico"></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+                </div>
+
+                <div class="form-group">
+                  <label for="telefono"></label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono (Opcional)">
+                </div>
+
+                <div class="form-group">
+                  <label for="select-interest"></label>
+                  <select class="form-control" id="select" name="select">
+                    <option>Selecciona tu interés</option>
+                    <option>Producción De Hortalizas</option>
+                    <option>Establo Lechero</option>
+                    <option>Estación De Granos</option>
+                    <option>Engorda</option>
+                    <option>Planta De Leche</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje"></label>
+                  <textarea class="form-control" rows="5" id="msg" name="msg" placeholder="Mensaje"></textarea>
+                </div>
+                <div id="ok"></div>
+                <div class="form-group btnSubmit">
+                  <button type="submit" class="btn btn-default center-block Oxygen">Enviar</button>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  <!--------------------
+     Header
+     --------------------->
+  <div class="row page-top">
+    <div class="col-md-4 text-right hortalizas-header homepage-section-text">
+      <h2 class="home-text-right">Producción<br>de hortalizas</h2></div>
+    <div class="col-md-8 hortalizas-header-pic"></div>
+  </div>
+
+
+  <div class="row veg">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2 first-text">
+        <p><strong>Rancho Lucero</strong> es una empresa mexicana dedicada a la <strong>producción de hortalizas frescas</strong> para el mercado nacional e internacional.</p>
+
+        <br>
+
+        <p><strong>Misión:</strong></p>
+        <p>Contribuimos al desarrollo de la economía del país realizando nuestra producción agrícola con el apoyo y compromiso de sus trabajadores, satisfaciendo al mercado nacional y de exportación con productos hortícolas de excelente calidad, inocuos,
+          con el compromiso del cuidado de medio ambiente y con el distintivo de fomentar el empleo en la región.</p>
+
+        <br>
+
+        <p><strong>Visión:</strong></p>
+        <p>Ser líderes en la producción de hortalizas frescas en la región lagunera y ser una empresa altamente rentable a través de la generación de empleos, basada en la seguridad alimentaria y con productos de excelente calidad para cumplir con los requisitos
+          y expectativas de nuestros clientes de EEUU, Canadá y México</p>
+      </div>
+    </div>
+  </div>
+  <!-- .container -->
+
+  <div class="row">
+    <div class="col-md-4 text-center hortalizas-header section-title homepage-section-text">
+      <h3 class="home-text-right pad-right-80">Certificaciones</h3></div>
+  </div>
+
+  <div class="row veg hortalizas-section-text">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2">
+        <p><strong>Programa de Inocuidad</strong></p>
+        <br>
+        <p><strong>Rancho Lucero</strong> tiene implementado y certificado desde 2005 un programa de <strong>Buenas Prácticas Agrícolas</strong> en todas sus unidades de producción, así como también un programa de <strong>Buenas Prácticas de Manufactura</strong>          en la planta Empacadora, ambos programas reconocidos por un organismo certificador internacional de tercería bajo el esquema Primus GFS (Global Food Safety Initiative Scheme), el cual se basa en un Sistema Administrativo de Inocuidad Alimentaria
+          y en un Análisis de Peligros y Puntos Críticos de Control (HACCP).</p>
+
+        <br>
+
+        <p>Racho Lucero tiene además un <strong>programa de aplicación de pesticidas</strong> en donde se certifica a través del laboratorio Primus Labs, que nuestros productos cumplen con el Límite Máximo Permitido por EPA (Environment Protection Agency)
+          en Estados Unidos, Canadá y México.</p>
+
+        <br>
+
+        <p>Además se tiene implementado un <strong>Sistema de Reducción de Riesgos de Contaminación en la Producción Primaria de Vegetales</strong> en todas sus unidades de producción, el cual está reconocido y certificado por SENASICA (Servicio Nacional
+          de Sanidad, Inocuidad y Calidad Agroalimentaria).</p>
+      </div>
+    </div>
+  </div>
+  <!-- .container -->
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-8 text-left hortalizas-header section-subtitle section-title-right">
+      <h3 class="pad-left pad-top">Productos</h3>
+      <h4 class="pad-left"><em>Las hortalizas que se producen son:</em></h4>
+    </div>
+  </div>
+
+  <div class="row productos">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4">
+        <img class="veg-icon" src="img/icons/iconos-12.png"></img>
+        <p class="veg-name">Tomate Saladette
+          <br><em>(Roma Tomato)</em></p>
+      </div>
+      <div class="col-md-4">
+        <img class="veg-icon" src="img/icons/iconos-13.png"></img>
+        <p class="veg-name">Tomate Uva
+          <br><em>(Grape Tomato)</em></p>
+      </div>
+      <div class="col-md-4">
+        <img class="veg-icon" src="img/icons/iconos-14.png"></img>
+        <p class="veg-name">Pimiento
+          <br><em>(Bell Pepper)</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 text-center hortalizas-header section-title">
+      <h3 class="pad-top pad-marcas">Marcas Registradas</h3></div>
+  </div>
+
+  <div class="row registradas">
+    <div class="col-md-9 col-md-offset-2">
+      <p>Las Marcas Registradas con que cuenta la Empresa son:</p>
+      <p><strong>Rancho Lucero:</strong> Calidad mínima de 90 puntos. <strong>Grado USDA No. 1</strong></p>
+      <p><strong>Bonna Terra:</strong> Calidad mínima de 90 puntos. <strong>Grado USDA No. 1</strong></p>
+      <p><strong>La Tinaja:</strong> Calidad mínima de 85 puntos. <strong>Grado USDA No. 1</strong></p>
+    </div>
+  </div>
+
+  <div class="row hortalizas-pics">
+    <div class="col-md-4 hortalizas-pic-1"></div>
+    <div class="col-md-4 hortalizas-pic-2"></div>
+    <div class="col-md-4 hortalizas-pic-3"></div>
+  </div>
+
+  <div class="row nuestras">
+    <button type="button" class="btn btn-default btn-lg">Nuestras Empresas</button>
+  </div>
+<footer class="lu-footer grey-footer">
+      <div class="row no-margin-row">
+        <div class="col-md-7 col-sm-6 vertical-center">
+          <div class="Oxygen seventeen no-letter-spacing white left padding-footer">
+            <img src="img/icons/homepage-rancho-lucero-08.png" class="footer-logo inline"> <p class="inline">Grupo Rancho Lucero S.A de C.V</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 padd-mobile">
+          <div class="Oxygen fourteen no-letter-spacing inline white left links">
+            <img src="img/icons/homepage-rancho-lucero-09.png" class="footer-icon-house inline"> <p class="inline footer-mobile">Carretera Gómez Palacio a Gregorio García<br>Km. 11.5 s/n. El Castillo Gómez Palacio, Durango.</p><br>
+            <img src="img/icons/homepage-rancho-lucero-10.png" class="footer-icon-msg inline"> <p class="inline footer-mobile">rtellez@rancholucero.com y helpdesk@rancholucero.com</p><br>
+            <img src="img/icons/homepage-rancho-lucero-11.png" class="footer-icon inline"> <p class="inline footer-mobile">871 180 0038</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.offcanvas.min.js"></script>
+
+  <script>
+    $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle"); // Toggle open & close
+  </script>
+</body>
+
+</html>

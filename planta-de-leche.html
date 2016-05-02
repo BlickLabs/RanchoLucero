@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rancho Lucero | Planta de leche </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+
+<body id="planta">
+  
+  <!--------------------
+     Menu and Contact Form
+     --------------------->
+  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+              MENÚ
+            </button>
+          </div>
+
+          <div class="navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch hamburger hamburger-collapse" id="js-bootstrap-offcanvas">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <ul class="nav navbar-nav">
+              <p class="menu-title">MENÚ</p>
+              <li><a href="index.html">Rancho Lucero</a></li>
+              <li><a href="quienes-somos.html">Quiénes somos</a></li>
+              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestras empresas <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="hortalizas.html">Producción de Hortalizas</a></li>
+                  <li><a href="establo-lechero.html">Establo Lechero</a></li>
+                  <li><a href="estacion-de-granos.html">Estación de Granos</a></li>
+                  <li><a href="engorda.html">Engorda</a></li>
+                  <li class="active"><a href="#">Planta de Leche</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contacto</a></li>
+            </ul>
+
+          </div>
+          <!-- / .navbar-offcanvas .navbar-offcanvas-touch -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      
+      <!-- Modal -->
+      <div id="contactModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Contacto</h4>
+            </div>
+
+            <div class="modal-body">
+               <form>
+                <div class="form-group">
+                  <label for="nombre"></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                  <label for="correo-electronico"></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+                </div>
+
+                <div class="form-group">
+                  <label for="telefono"></label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono (Opcional)">
+                </div>
+
+                <div class="form-group">
+                  <label for="select-interest"></label>
+                  <select class="form-control" id="select" name="select">
+                    <option>Selecciona tu interés</option>
+                    <option>Producción De Hortalizas</option>
+                    <option>Establo Lechero</option>
+                    <option>Estación De Granos</option>
+                    <option>Engorda</option>
+                    <option>Planta De Leche</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje"></label>
+                  <textarea class="form-control" rows="5" id="msg" name="msg" placeholder="Mensaje"></textarea>
+                </div>
+                <div id="ok"></div>
+                <div class="form-group btnSubmit">
+                  <button type="submit" class="btn btn-default center-block Oxygen">Enviar</button>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <!--------------------
+     Header
+     --------------------->
+  <div class="row page-top">
+    <div class="col-md-4 text-right planta-header homepage-section-text">
+      <h2 class="home-text-right">Planta de<br>Leche<br>LONEG</h2></div>
+    <div class="col-md-8 planta-header-pic"></div>
+  </div>
+
+
+  <div class="row planta">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2 first-text">
+        <p><strong>LONEG</strong> es una planta única a nivel nacional dedicada a la <strong>separación de los componentes de la leche</strong>, de manera tal que se conservan las propiedades nativas de cada uno de los mismos, obteniendo grasa, caseína y
+          proteína concentrada del suero de la leche.</p>
+
+        <br>
+
+        <p>El proceso está diseñado para que estos <strong>productos cumplan con las más estrictas normas de calidad</strong> e inocuidad al tener implementado un Sistema de Gestión de la Inocuidad de los Alimentos bajo el Modelo FSSC 22000, lo que nos permite
+          entrar a mercados tanto nacionales como de exportación en países de Europa, Asia y Norteamérica.</p>
+
+        <br>
+
+        <p>El proceso es altamente sustentable, ya que subproductos como la lactosa y los minerales que se generan, <strong>se utilizarán para reforzar la dieta del ganado</strong>; por otro lado, <strong>se recuperarán del proceso miles de litros de agua diariamente</strong>,
+          los cuales previo tratamiento de potabilización podrían incorporarse a la red hidráulica de la región para mitigar la escasez de agua.</p>
+      </div>
+    </div>
+  </div>
+  <!-- .container -->
+
+  <div class="row">
+    <div class="col-md-4 text-center hortalizas-header section-title homepage-section-text">
+      <h3 class="home-text-right">Productos</h3></div>
+  </div>
+
+  <div class="row planta granos-section-text">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2">
+        <ul class="content-list">
+          <li>Proteína aislada de <strong>suero de leche</strong> WPI 90</li>
+          <li>Caseína <strong>micelar de leche</strong> MMC 85</li>
+          <li>Concentrado de <strong>proteína de leche</strong> MPC 85</li>
+          <li>Grasa <strong>anhidra de leche</strong> AMF</li>
+        </ul>
+      </div>
+    </div>
+    <!-- .container -->
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-8 text-center hortalizas-header section-title section-title-right homepage-section-text">
+      <h3 class="home-text-left">Instalaciones</h3></div>
+  </div>
+
+  <div class="row planta">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2">
+        <p>Se cuenta con las instalaciones más tecnificadas y modernas en su clase, incluyendo <strong>silos de almacenamiento, clarificadores, pasteurizadores, descremadora, sistemas de filtración</strong> (microfiltración, ultrafiltración, nanofiltración
+          y ósmosis inversa), <strong>secador por atomización y un  laboratorio interno</strong> para garantizar la calidad e inocuidad de nuestros productos.</p>
+      </div>
+    </div>
+    <!-- .container -->
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-4 text-center hortalizas-header section-title homepage-section-text">
+      <h3 class="home-text-right pad-right-80">Certificaciones</h3></div>
+  </div>
+
+  <div class="row planta granos-section-text">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2">
+        <p>Para garantizar la seguridad alimentaria de nuestros productos se tiene implementado un sistema de gestión de la seguridad de los alimentos bajo el <strong>Modelo Food Safety System Certification 22000</strong> (FSSC 22000) cumpliendo con la Norma
+          Internacional <strong>ISO 22000:2005</strong> y la especificación técnica <strong>ISO/TS 22002-1:2009</strong>, además de tener implementado <strong>un programa de análisis de peligros y puntos críticos de control HACCP</strong>.</p>
+          
+          <br>
+          
+        <p>Asimismo se tiene el <strong>certificado Kosher OU</strong> por parte de Union of Orthodox Jewish Congregations of America y el <strong>reconocimiento Halal</strong> por parte de IFANCA (The Islamic Food and Nutrition Council of America)</p>
+      </div>
+    </div>
+    <!-- .container -->
+  </div>
+
+
+
+  <div class="row planta-pics">
+    <div class="col-md-4 planta-pic-1"></div>
+    <div class="col-md-4 planta-pic-2"></div>
+    <div class="col-md-4 planta-pic-3"></div>
+  </div>
+
+  <div class="row nuestras">
+    <button type="button" class="btn btn-default btn-lg">Nuestras Empresas</button>
+  </div>
+
+  <!--------------------
+     Footer
+     --------------------->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-2"><img class="footer-logo" src="img/icons/homepage-rancho-lucero-08.png"></img>
+          </div>
+          <div class="col-md-8 footer-text">Grupo Rancho Lucero S.A de C.V</div>
+        </div>
+        <div class="col-md-5">
+          <div>
+            <div class="col-xs-1"><img class="footer-icons" src="img/icons/homepage-rancho-lucero-09.png"></div>
+            <div class="col-xs-11">
+              <p>Carretera Gómez Palacio a Gregorio García
+                <br> Km. 11.5 s/n. El Castillo Gómez Palacio, Durango</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="col-xs-1"><img class="footer-icons" src="img/icons/homepage-rancho-lucero-11.png"></div>
+            <div class="col-xs-11">
+              <p>rtellez@rancholucero.com y helpdesk@rancholucero.com</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="col-xs-1"><img class="footer-icons" src="img/icons/homepage-rancho-lucero-10.png"></div>
+            <div class="col-xs-11">
+              <p>871.180.0038</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .container -->
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.offcanvas.min.js"></script>
+
+  <script>
+    $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle"); // Toggle open & close
+  </script>
+</body>
+
+</html>

@@ -1,177 +1,307 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Rancho Lucero</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="fonts/font-awesome/font-awesome.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/iconmoon/style.css">
+<html lang="en">
 
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  </head>
-  <body>
-    <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rancho Lucero</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+</head>
 
-    <header class="lavel-up-header lavel-up-header-bg-img">
-      <div class="lavel-up-color-overlay">
-        <div class="row no-margin-row">
-          <div class="text-center logo-container">
-            <img src="img/logos/Logotipo.png" class="logo-rl img-responsive">
+<body id="homepage">
+ 
+ <!--
+     Menu and Contact Form
+    -->
+  
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+            MENÚ
+          </button>
+        </div>
+
+        <div class="navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch hamburger hamburger-collapse" id="js-bootstrap-offcanvas">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+          <ul class="nav navbar-nav Oxygen">
+            <p class="menu-title">MENÚ</p>
+            <li class="active"><a href="#">Rancho Lucero</a></li>
+            <li><a href="quienes-somos.html">Quiénes somos</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestras empresas <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="hortalizas.html">Producción de Hortalizas</a></li>
+                <li><a href="establo-lechero.html">Establo Lechero</a></li>
+                <li><a href="estacion-de-granos.html">Estación de Granos</a></li>
+                <li><a href="engorda.html">Engorda</a></li>
+                <li><a href="planta-de-leche.html">Planta de Leche</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contacto</a></li>
+          </ul>
+
+        </div>
+        <!-- / .navbar-offcanvas .navbar-offcanvas-touch -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    
+    
+    <!-- Modal -->
+    <div id="contactModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Contacto</h4>
           </div>
-          <div class="text-center header-text">
-            <h3 class="black no-letter-spacing thirty-two Oxygen header-mobile">
-              <b>Grupo Lucero</b> es una empresa <b>mexicana</b> dedicada a la <br><b>producción</b> de diferentes alimentos.
-            </h3>
-          </div>
-          <div class="text-center arrow-down">
-            <h3 class="small-caps white seventeen no-letter-spacing Pier no-margin-text">conoce más</h3>
-            <img src="img/icons/arrow-down.png" class="arrow-icon">
+
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="nombre"></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+              </div>
+
+              <div class="form-group">
+                <label for="correo-electronico"></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+              </div>
+
+              <div class="form-group">
+                <label for="telefono"></label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono (Opcional)">
+              </div>
+
+              <div class="form-group">
+                <label for="select-interest"></label>
+                <select class="form-control" id="select" name="select">
+                  <option>Selecciona tu interés</option>
+                  <option>Producción De Hortalizas</option>
+                  <option>Establo Lechero</option>
+                  <option>Estación De Granos</option>
+                  <option>Engorda</option>
+                  <option>Planta De Leche</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje"></label>
+                <textarea class="form-control" rows="5" id="msg" name="msg" placeholder="Mensaje"></textarea>
+              </div>
+              <div id="ok"></div>
+              <div class="form-group btnSubmit">
+                <button type="submit" class="btn btn-default center-block Oxygen">Enviar</button>
+              </div>
+
+
+            </form>
           </div>
         </div>
-      </div><!--.row-->
-    </header>
-    <section class="portfolio web">
+      </div>
+    </div>
+
+  <!--
+     Header
+     -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="logo-tagline">
+        <img class="header-logo" src="img/logotipo.png"></img>
+        <h1><strong>Grupo Lucero</strong> es una empresa <strong>mexicana</strong> dedicada a la <br> <strong>producción</strong> de diferentes alimentos.</h1>
+      </div>
+
+      <a href="#sections" class="click-scrolling">
+        <div class="mas">
+          <h5>CONOCE MÁS</h5>
+          <span class="glyphicon glyphicon-chevron-down mas-arrow"></span>
+          <!--<img class="mas-arrow" src="img/icons/homepage-rancho-lucero-07.png"></img>-->
+        </div>
+      </a>
+    </div>
+  </div>
+  <!--/ .jumbotron -->
+
+  <!--
+     Features 
+     -->
+  <section class="portfolio web" id="sections">   
+    <div class="">
+      <div class="row">
+        <a href="hortalizas.html">
+          <div class="col-md-6 col-sm-6 feature-1 homepage-section homepage-section-text">
+            <h2 class="text-right white home-text-right">Producción de<br>hortalizas</h2>
+          </div>
+          <div class="col-md-6 col-sm-6 home-row-1 homepage-section"></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="row">
+        <a href="establo-lechero.html">
+          <div class="col-md-6 col-sm-6 home-row-2 homepage-section homepage-section-text"></div>
+            <div class="col-md-6 col-sm-6 feature-2 homepage-section">
+              <h2 class="text-left white home-text-left">Establo<br>Lechero</h2>
+            </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="estacion-de-granos.html">
+        <div class="col-md-6 col-sm-6 feature-3 homepage-section homepage-section-text">
+          <h2 class="text-right white home-text-right">Estación<br>de granos</h2>
+        </div>
+        <div class="col-md-6 col-sm-6 home-row-3 homepage-section"></div>
+      </a>
+    </div>
+
+    <div class="">
+      <div class="row">
+        <a href="engorda.html">
+          <div class="col-md-6 col-sm-6 home-row-4 homepage-section homepage-section-text"></div>
+            <div class="col-md-6 col-sm-6 feature-4 homepage-section">
+              <h2 class="text-left white home-text-left">Engorda</h2>
+            </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="planta-de-leche.html">
+        <div class="col-md-6 col-sm-6 feature-5 homepage-section homepage-section-text">
+          <h2 class="text-right white home-text-right">Planta<br>de leche</h2>
+        </div>
+        <div class="col-md-6 col-sm-6 home-row-5 homepage-section"></div>
+      </a>
+    </div>
+  </section>
+  <section class="portfolio mobile" id="sections">
       <div class="row no-margin-row">
-          <div class="col-md-6 col-sm-6 dark-blue-content blocks-height vertical-center left-block text-right">
-            <h1 class="white Oxygen no-letter-spacing forty-nine">Producción de<br> hortalizas</h1>
-          </div>
-          <div class="col-md-6 col-sm-6 img-block">
-            <img src="img/Fotos-02.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-6 col-sm-6 img-block">
-            <img src="img/Fotos-03.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-6 col-sm-6 dark-blue-content blocks-height vertical-center right-block">
-            <h1 class="white Oxygen no-letter-spacing forty-nine">Establo <br> Lechero</h1>
-          </div>
-          <div class="col-md-6 col-sm-6 blue-content blocks-height vertical-center left-block-middle text-right">
-            <h1 class="white Oxygen no-letter-spacing forty-nine">Estación<br>de granos</h1>
-          </div>
-          <div class="col-md-6 col-sm-6 img-block">
-            <img src="img/Fotos-04.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-6 col-sm-6 img-block">
-            <img src="img/Fotos-05.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-6 col-sm-6 blue-content blocks-height vertical-center right-block-blue">
-            <h1 class="white Oxygen no-letter-spacing forty-nine"><br>Engorda</h1>
-          </div>
-          <div class="col-md-6 col-sm-6 dark-blue-content blocks-height vertical-center left-block-tinny text-right">
-            <h1 class="white Oxygen no-letter-spacing forty-nine">Planta<br>de leche</h1>
-          </div>
-          <div class="col-md-6 col-sm-6 img-block">
-            <img src="img/Fotos-06.jpg" class="img-responsive img-services">
-          </div>
+          <a href="hortalizas.html">
+            <div class="col-md-5 dark-blue-content blocks-height text-center center-block">
+              <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Producción de hortalizas</h1>
+            </div>
+            <div class="col-md-1 dark-blue-background blocks-height filler">
+              
+            </div>
+            <div class="col-md-6 img-block">
+              <img src="img/Fotos-02.jpg" class="img-responsive img-services">
+            </div>
+          </a>
+          <a href="establo-lechero.html">
+            <div class="col-md-5 dark-blue-content blocks-height text-center">
+              <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Establo Lechero</h1>
+            </div>
+            <div class="col-md-1 dark-blue-background blocks-height filler">
+          
+            </div>
+            <div class="col-md-6 img-block">
+              <img src="img/Fotos-03.jpg" class="img-responsive img-services">
+            </div>
+          </a>
+          <a href="estacion-de-granos.html">
+            <div class="col-md-5 blue-content blocks-height text-center">
+              <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Estación de granos</h1>
+            </div>
+            <div class="col-md-1 blue-background blocks-height filler">
+              
+            </div>
+            <div class="col-md-6 img-block">
+              <img src="img/Fotos-04.jpg" class="img-responsive img-services">
+            </div>
+          </a>
+          <a href="engorda.html">
+            <div class="col-md-5 blue-content blocks-height text-center">
+              <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Engorda</h1>
+            </div>
+            <div class="col-md-1 blue-background blocks-height filler">
+              
+            </div>
+            <div class="col-md-6 img-block">
+              <img src="img/Fotos-05.jpg" class="img-responsive img-services">
+            </div>
+          </a>
+          <a href="planta-de-leche.html">
+            <div class="col-md-5 dark-blue-content blocks-height center-block text-center">
+              <h1 class="white Oxygen no-letter-spacing forty-nine center mobile-services">Planta de leche</h1>
+            </div>
+            <div class="col-md-1 dark-blue-background blocks-height filler">
+              
+            </div>
+            <div class="col-md-6 img-block">
+              <img src="img/Fotos-06.jpg" class="img-responsive img-services">
+            </div>
+          </a>
       </div>
     </section>
-        <section class="portfolio mobile">
-      <div class="row no-margin-row">
-          <div class="col-md-5 dark-blue-content blocks-height text-center center-block">
-            <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Producción de hortalizas</h1>
-          </div>
-          <div class="col-md-1 dark-blue-background blocks-height filler">
-            
-          </div>
-          <div class="col-md-6 img-block">
-            <img src="img/Fotos-02.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-5 dark-blue-content blocks-height text-center">
-            <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Establo Lechero</h1>
-          </div>
-          <div class="col-md-1 dark-blue-background blocks-height filler">
-        
-          </div>
-          <div class="col-md-6 img-block">
-            <img src="img/Fotos-03.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-5 blue-content blocks-height text-center">
-            <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Estación de granos</h1>
-          </div>
-          <div class="col-md-1 blue-background blocks-height filler">
-            
-          </div>
-          <div class="col-md-6 img-block">
-            <img src="img/Fotos-04.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-5 blue-content blocks-height text-center">
-            <h1 class="white Oxygen no-letter-spacing forty-nine mobile-services">Engorda</h1>
-          </div>
-          <div class="col-md-1 blue-background blocks-height filler">
-            
-          </div>
-          <div class="col-md-6 img-block">
-            <img src="img/Fotos-05.jpg" class="img-responsive img-services">
-          </div>
-          <div class="col-md-5 dark-blue-content blocks-height center-block text-center">
-            <h1 class="white Oxygen no-letter-spacing forty-nine center mobile-services">Planta de leche</h1>
-          </div>
-          <div class="col-md-1 dark-blue-background blocks-height filler">
-            
-          </div>
-          <div class="col-md-6 img-block">
-            <img src="img/Fotos-06.jpg" class="img-responsive img-services">
-          </div>
-      </div>
-    </section>
-    <footer class="lu-footer grey-footer">
+  <!--
+     Footer
+     -->
+
+   <footer class="lu-footer grey-footer">
       <div class="row no-margin-row">
         <div class="col-md-7 col-sm-6 vertical-center">
           <div class="Oxygen seventeen no-letter-spacing white left padding-footer">
-            <img src="img/icons/footer-logo.png" class="footer-logo inline"> <p class="inline">Grupo Rancho Lucero S.A de C.V</p>
+            <img src="img/icons/homepage-rancho-lucero-08.png" class="footer-logo inline"> <p class="inline">Grupo Rancho Lucero S.A de C.V</p>
           </div>
         </div>
         <div class="col-md-5 col-sm-6 padd-mobile">
           <div class="Oxygen fourteen no-letter-spacing inline white left links">
-            <img src="img/icons/icon-01.png" class="footer-icon-house inline"> <p class="inline footer-mobile">Carretera Gómez Palacio a Gregorio García<br>Km. 11.5 s/n. El Castillo Gómez Palacio, Durango.</p><br>
-            <img src="img/icons/icon-02.png" class="footer-icon-msg inline"> <p class="inline footer-mobile">rtellez@rancholucero.com y helpdesk@rancholucero.com</p><br>
-            <img src="img/icons/icon-03.png" class="footer-icon inline"> <p class="inline footer-mobile">871 180 0038</p>
+            <img src="img/icons/homepage-rancho-lucero-09.png" class="footer-icon-house inline"> <p class="inline footer-mobile">Carretera Gómez Palacio a Gregorio García<br>Km. 11.5 s/n. El Castillo Gómez Palacio, Durango.</p><br>
+            <img src="img/icons/homepage-rancho-lucero-10.png" class="footer-icon-msg inline"> <p class="inline footer-mobile">rtellez@rancholucero.com y helpdesk@rancholucero.com</p><br>
+            <img src="img/icons/homepage-rancho-lucero-11.png" class="footer-icon inline"> <p class="inline footer-mobile">871 180 0038</p>
           </div>
         </div>
       </div>
     </footer>
-  
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.offcanvas.min.js"></script>
+  <script src="js/mail.js"></script>
 
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>   
-    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-    <script src="js/mail.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/retina.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
-    <script type="text/javascript">
-        /*  Stellar for background scrolling  */
-        (function () {
+  <script>
+    $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle");
+    $("#myNavbarWeb a,#myNavbarMobile a, .click-scrolling ").on('click', function (event) {
+    event.preventDefault();
+    var pageRef = $(this).attr("href");
+    var offset = 80;
+    if(pageRef[0] != '#') {
+        window.location.href = pageRef;
+      }
+      else{
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top -0
+        }, 800, function () {
+            window.location.hash = hash;
 
-          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-           
-          } else {
-            $(window).stellar({
-              horizontalScrolling: false,
-              verticalScrolling: false,
-              responsive: true
-            });
-          }
+        });
+   var scroll_start = 0;
+   var startchange = $('.portfolio');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.navbar-toggle').addClass('onScroll');
+          console.log("Si")
+       } else {
+          $('.navbar-toggle').addClass('noScroll');
+          console.log("No")
+       }
+   });
+      }
+}); // Toggle open & close
+  </script>
+</body>
 
-        }());
-            $("#contact").click(function(){
-        $("#contactModal").modal();
-    });
-        /* End Stellar for background scrolling  */
-        </script>
-  </body>
 </html>

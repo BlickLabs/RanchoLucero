@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rancho Lucero | Engorda</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.offcanvas.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+
+<body id="engorda">
+
+    <!--------------------
+     Menu and Contact Form
+     --------------------->
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+                    MENÚ
+                </button>
+            </div>
+
+            <div class="navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch hamburger hamburger-collapse" id="js-bootstrap-offcanvas">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                <ul class="nav navbar-nav">
+                    <p class="menu-title">MENÚ</p>
+                    <li><a href="index.html">Rancho Lucero</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestras empresas <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="hortalizas.html">Producción de Hortalizas</a></li>
+                            <li><a href="establo-lechero.html">Establo Lechero</a></li>
+                            <li><a href="estacion-de-granos.html">Estación de Granos</a></li>
+                            <li class="active"><a href="#">Engorda</a></li>
+                            <li><a href="planta-de-leche.html">Planta de Leche</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contacto</a></li>
+                </ul>
+
+            </div>
+            <!-- / .navbar-offcanvas .navbar-offcanvas-touch -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    
+    <!-- Modal -->
+            <div id="contactModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Contacto</h4>
+                        </div>
+
+                        <div class="modal-body">
+                             <form>
+                              <div class="form-group">
+                                <label for="nombre"></label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="correo-electronico"></label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="telefono"></label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono (Opcional)">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="select-interest"></label>
+                                <select class="form-control" id="select" name="select">
+                                  <option>Selecciona tu interés</option>
+                                  <option>Producción De Hortalizas</option>
+                                  <option>Establo Lechero</option>
+                                  <option>Estación De Granos</option>
+                                  <option>Engorda</option>
+                                  <option>Planta De Leche</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="mensaje"></label>
+                                <textarea class="form-control" rows="5" id="msg" name="msg" placeholder="Mensaje"></textarea>
+                              </div>
+                              <div id="ok"></div>
+                              <div class="form-group btnSubmit">
+                                <button type="submit" class="btn btn-default center-block Oxygen">Enviar</button>
+                              </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!--------------------
+     Header
+     --------------------->
+    <div class="row page-top">
+        <div class="col-md-4 text-right granos-header homepage-section-text">
+            <h2 class="home-text-right">Engorda</h2></div>
+        <div class="col-md-8 engorda-header-pic"></div>
+    </div>
+
+
+    <div class="row granos">
+        <div class="container">
+            <div class="col-md-9 col-md-offset-2 first-text">
+                <!--<p><strong>Historia</strong></p>-->
+                <p><strong>Rancho Lucero</strong> cuenta con una de las explotaciones productoras de carne bovina en forma intensiva más importantes de la región lagunera, en donde nuestra prioridad es la implementación de una correcta planeación de las diferentes actividades zootécnicas, nutricionales, productivas y económicas.</p>
+            </div>
+        </div>
+    </div>
+    <!-- .container -->
+
+
+    <div class="row">
+        <div class="col-md-4 text-center hortalizas-header section-title homepage-section-text">
+            <h3 class="home-text-right pad-right-80">Certificaciones</h3></div>
+    </div>
+
+    <div class="row planta granos-section-text">
+        <div class="container">
+            <div class="col-md-9 col-md-offset-2">
+                <p>Rancho Lucero tiene implementado en sus operaciones las Buenas Prácticas Pecuarias en la Producción de Carne de Ganado Bovino en Confinamiento, lo cual está reconocido desde 2015 por la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación (SAGARPA) a través del Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria (SENASICA), con la emisión del <strong>Certificado con clave PC-PD-10-15-0222</strong>.</p>
+
+                <br>
+
+                <p>Además de formar parte del programa de Proveedor Confiable para la producción de carne, el cual tiene como objetivo brindar una alternativa sana e inocua a los consumidores, garantizando que todo producto cárnico que sale de nuestros corrales de engorda, estén libres de Clenbuterol.</p>
+            </div>
+        </div>
+        <!-- .container -->
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-8 text-center hortalizas-header section-title section-title-right homepage-section-text">
+            <h3 class="home-text-left">Instalaciones</h3></div>
+    </div>
+
+    <div class="row establo">
+        <div class="col-md-9 col-md-offset-2">
+            <ul class="content-list">
+                <li>Corrales de engorda para una capacidad de hasta <strong>136,000 animales</strong></li>
+                <li>Planta de Producción de Alimentos Balanceadosli</li>
+                <li><strong>8 Centros</strong> veterinarios o enfermerías</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 text-center hortalizas-header section-title homepage-section-text">
+            <h3 class="home-text-right">Ubicación</h3></div>
+    </div>
+
+    <div class="row establo granos-section-text">
+        <div class="col-md-6 col-md-offset-3 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115154.96349780424!2d-103.56209336426217!3d25.585217161018207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fd9ceb197d4af%3A0x42a13b1475d7b8cd!2sG%C3%B3mez+Palacio%2C+Durango%2C+Mexico!5e0!3m2!1sen!2sus!4v1461695860683" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <div class="row granos-pics">
+        <div class="col-md-4 granos-pic-1"></div>
+        <div class="col-md-4 granos-pic-2"></div>
+        <div class="col-md-4 granos-pic-3"></div>
+    </div>
+
+    <div class="row nuestras">
+        <button type="button" class="btn btn-default btn-lg Oxygen">Nuestras Empresas</button>
+    </div>
+    <footer class="lu-footer grey-footer">
+      <div class="row no-margin-row">
+        <div class="col-md-7 col-sm-6 vertical-center">
+          <div class="Oxygen seventeen no-letter-spacing white left padding-footer">
+            <img src="img/icons/homepage-rancho-lucero-08.png" class="footer-logo inline"> <p class="inline">Grupo Rancho Lucero S.A de C.V</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 padd-mobile">
+          <div class="Oxygen fourteen no-letter-spacing inline white left links">
+            <img src="img/icons/homepage-rancho-lucero-09.png" class="footer-icon-house inline"> <p class="inline footer-mobile">Carretera Gómez Palacio a Gregorio García<br>Km. 11.5 s/n. El Castillo Gómez Palacio, Durango.</p><br>
+            <img src="img/icons/homepage-rancho-lucero-10.png" class="footer-icon-msg inline"> <p class="inline footer-mobile">rtellez@rancholucero.com y helpdesk@rancholucero.com</p><br>
+            <img src="img/icons/homepage-rancho-lucero-11.png" class="footer-icon inline"> <p class="inline footer-mobile">871 180 0038</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.offcanvas.min.js"></script>
+
+    <script>
+        $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle"); // Toggle open & close
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rancho Lucero | Establo Lechero</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+
+<body id="establo">
+  <!--------------------
+     Menu and Contact Form
+     --------------------->
+  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+              MENÚ
+            </button>
+          </div>
+
+          <div class="navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch hamburger hamburger-collapse" id="js-bootstrap-offcanvas">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <ul class="nav navbar-nav">
+              <p class="menu-title">MENÚ</p>
+              <li><a href="index.html">Rancho Lucero</a></li>
+              <li><a href="quienes-somos.html">Quiénes somos</a></li>
+              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestras empresas <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="hortalizas.html">Producción de Hortalizas</a></li>
+                  <li class="active"><a href="#">Establo Lechero</a></li>
+                  <li><a href="estacion-de-granos.html">Estación de Granos</a></li>
+                  <li><a href="engorda.html">Engorda</a></li>
+                  <li><a href="planta-de-leche.html">Planta de Leche</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contacto</a></li>
+            </ul>
+
+          </div>
+          <!-- / .navbar-offcanvas .navbar-offcanvas-touch -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      
+      <!-- Modal -->
+      <div id="contactModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Contacto</h4>
+            </div>
+
+            <div class="modal-body">
+               <form>
+                <div class="form-group">
+                  <label for="nombre"></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                  <label for="correo-electronico"></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+                </div>
+
+                <div class="form-group">
+                  <label for="telefono"></label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono (Opcional)">
+                </div>
+
+                <div class="form-group">
+                  <label for="select-interest"></label>
+                  <select class="form-control" id="select" name="select">
+                    <option>Selecciona tu interés</option>
+                    <option>Producción De Hortalizas</option>
+                    <option>Establo Lechero</option>
+                    <option>Estación De Granos</option>
+                    <option>Engorda</option>
+                    <option>Planta De Leche</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje"></label>
+                  <textarea class="form-control" rows="5" id="msg" name="msg" placeholder="Mensaje"></textarea>
+                </div>
+                <div id="ok"></div>
+                <div class="form-group btnSubmit">
+                  <button type="submit" class="btn btn-default center-block Oxygen">Enviar</button>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <!--------------------
+     Header
+     --------------------->
+  <div class="row page-top">
+    <div class="col-md-4 text-right establo-header homepage-section-text">
+      <h2 class="home-text-right">Establo<br>Lechero</h2></div>
+    <div class="col-md-8 establo-header-pic"></div>
+  </div>
+
+
+  <div class="row establo">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2 first-text">
+        <p>En <strong>Rancho Lucero</strong> producimos leche de la más alta calidad, de animales bien cuidados con médicos veterinarios, nutridos, en un ambiente saludable, agradable y con las prácticas más modernas de ordeña, para asegurar la salud de
+          la vaca y la calidad del producto.</p>
+
+        <br>
+
+        <p><strong>Misión:</strong></p>
+        <p>Ser un establo con los más altos estándares de calidad y líder en la producción de leche, manejando nuestro ganado de manera eficaz y eficiente, enfocándonos siempre a la salud del consumidor.</p>
+
+        <br>
+
+        <p><strong>Visión:</strong></p>
+        <p>Producir volúmenes altos de leche, con excelente atributos y estrictos parámetros de higiene. Ser líderes en el mercado nacional de productores de leche de la más alta calidad, durante todas las épocas del año.</p>
+      </div>
+    </div>
+    <!-- .container -->
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 text-center hortalizas-header section-title homepage-section-text">
+      <h3 class="home-text-right pad-right-80">Certificaciones</h3></div>
+  </div>
+
+  <div class="row establo establo-section-text">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2">
+        <p>Mejoramos continuamente nuestros procesos utilizando un <strong>Sistema de Gestión de la Calidad</strong> basado en la norma <strong>ISO 9001:2008</strong>, el cual se encuentra certificado desde 2007 a través de un organismo de tercería reconocido
+          internacionalmente como lo es BSI (British Standards Institution), con certificado número FM 511370.</p>
+      </div>
+    </div>
+    <!-- .container -->
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-8 text-center hortalizas-header section-title section-title-right homepage-section-text">
+      <h3 class="home-text-left">Instalaciones</h3></div>
+  </div>
+
+  <div class="row establo">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-2">
+        <p><strong>Rancho Lucero</strong> se considera el establo más grande de Latinoamérica, contamos con la más alta tecnología y cuatro salas de ordeño, dos tipo carrusel y dos tipo paralelo. <strong>Una de las salas tipo carrusel es considerada la más grande del mundo</strong>,
+          capaz de ordeñar 99 vacas a la vez.</p>
+
+        <br>
+
+        <p>Las instalaciones le <strong>permiten al ganado estar en las mejores condiciones de confort</strong>, tanto en los corrales como en las salas de ordeño, además al contar con sistemas avanzados de enfriamiento y almacenamiento de la leche, y contar
+          con un laboratorio interno, nos permite <strong>producir leche con los más altos índices de calidad e higiene</strong>.</p>
+      </div>
+    </div>
+    <!-- .container -->
+
+  </div>
+
+  <div class="row establo-pics">
+    <div class="col-md-4 establo-pic-1"></div>
+    <div class="col-md-4 establo-pic-2"></div>
+    <div class="col-md-4 establo-pic-3"></div>
+  </div>
+
+  <div class="row nuestras">
+    <button type="button" class="btn btn-default btn-lg">Nuestras Empresas</button>
+  </div>
+ <footer class="lu-footer grey-footer">
+      <div class="row no-margin-row">
+        <div class="col-md-7 col-sm-6 vertical-center">
+          <div class="Oxygen seventeen no-letter-spacing white left padding-footer">
+            <img src="img/icons/homepage-rancho-lucero-08.png" class="footer-logo inline"> <p class="inline">Grupo Rancho Lucero S.A de C.V</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 padd-mobile">
+          <div class="Oxygen fourteen no-letter-spacing inline white left links">
+            <img src="img/icons/homepage-rancho-lucero-09.png" class="footer-icon-house inline"> <p class="inline footer-mobile">Carretera Gómez Palacio a Gregorio García<br>Km. 11.5 s/n. El Castillo Gómez Palacio, Durango.</p><br>
+            <img src="img/icons/homepage-rancho-lucero-10.png" class="footer-icon-msg inline"> <p class="inline footer-mobile">rtellez@rancholucero.com y helpdesk@rancholucero.com</p><br>
+            <img src="img/icons/homepage-rancho-lucero-11.png" class="footer-icon inline"> <p class="inline footer-mobile">871 180 0038</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.offcanvas.min.js"></script>
+
+  <script>
+    $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle"); // Toggle open & close
+  </script>
+</body>
+
+</html>
