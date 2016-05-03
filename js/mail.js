@@ -13,7 +13,7 @@ $(document).ready(function() {
         messages: {
             name: "Debe introducir su nombre.",
             email : "Debe introducir un email válido.",
-            msg : "El campo Mensaje es obligatorio."
+            msg : "El campo Mensaje es obligatorio.",
             select : "Seleccione un interés."
         },
         submitHandler: function(form){
