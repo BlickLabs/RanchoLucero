@@ -600,7 +600,22 @@ button.close:hover {
     height: 350px;
 }
 
+.engorda-pic-1 {
+    background: url("../img/engorda.JPG") center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
 
+.engorda-pic-2 {
+    background: url("../img/engorda-2.JPG") center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.engorda-pic-3 {
+    background: url("../img/engorda-3.JPG") center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
 /**************************
 * Planta de leche Page
 **************************/
@@ -744,7 +759,9 @@ h3 {
     .jumbotron h1 {
         font-size: 1.5em;
     }
-    
+    .nav.navbar-nav{
+        padding-left: 15px;
+    }
     /*.pad-left {*/
     /*    padding-top: 10px;*/
     /*}*/
@@ -1083,6 +1100,9 @@ h3 {
     }
 
 }
+.mobile{
+    display: none;
+}
 @media(max-width: 850px) and (min-width: 768px){
     .forty-nine{
         font-size: 28px;
@@ -1253,6 +1273,14 @@ a{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+@media(max-width: 767px){
+    .mobile-services{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+]
 @media(max-width: 480px){
     .header-mobile{
         padding: 15px;
@@ -1273,6 +1301,12 @@ a{
         padding-top: 0%;
         padding-bottom: 5%;
     }
+    .mobile-bullets {
+    list-style: none;
+    background: url("../img/icons/list-bullet.png") no-repeat left top !important;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
     .left-block-tinny{
         padding-left: 0%;
     }
@@ -1332,6 +1366,12 @@ a{
     .padd-mobile{
         padding-left: 0px;
     }
+        .mobile-bullets {
+    list-style: none;
+    background: url("../img/icons/list-bullet.png") no-repeat left top !important;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    }   
 }
 .fourteen{
     font-size: 14px;
@@ -1349,6 +1389,7 @@ a{
         display:none !important;
     }
 }
+
 .onScroll{
     color: #FFF;
   --webkit-transition: all 1s ease-in-out;
@@ -1377,4 +1418,3 @@ a{
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; 
 }
-
