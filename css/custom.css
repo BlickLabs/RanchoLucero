@@ -368,7 +368,13 @@ button.close:hover {
     height: 370px;
     max-width: 100%;
 }
-
+.home-button{
+    background-color: #05424a;
+    padding: 3px 10px;
+    width: 100px;
+    color: #FFF;
+    border-radius: 5px;
+}
 .homepage-section-text {
     position: relative;
 }
