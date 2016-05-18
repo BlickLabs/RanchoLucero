@@ -1294,6 +1294,11 @@ a{
     .footer-mobile{
         width: 210px;
     }
+    .mobile-nav {
+        position: relative;
+        display: block;
+        padding: 10px 25px;
+    }
     .padding-footer{
         padding-bottom: 30px;
     }
