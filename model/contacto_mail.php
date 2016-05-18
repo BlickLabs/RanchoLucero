@@ -20,11 +20,10 @@ $name = $name2;
 $email = $email2;
 $content = $mensaje;
 $select = $interes;
-$phone = $phone;
 
 
 
-$messageBody = "De: $name ($email)\n\n $content \n\n Interés: $select \n\n Número: $phone";
+$messageBody = "De: $name ($email)\n\n $content \n\n Interés: $select \n\n";
 
 $config = array();
 $config['api_key'] = $api_key;

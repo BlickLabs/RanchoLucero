@@ -6,7 +6,7 @@ $(document).ready(function() {
             name: { required: true, minlength: 2},
             email: { required:true, email: true},
             phone: { required:false, minlength: 2},
-            select: { required:true, minlength: 2},
+            select: { required:true},
             msg: { required:true, minlength: 2}
             
         },
