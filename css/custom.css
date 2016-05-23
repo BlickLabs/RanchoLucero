@@ -44,7 +44,6 @@ h3 {
     font-family: oxygenRegular;
     font-size: 2em;
     color: #1d1d1b;
-    letter-spacing: 0px;
 }
 .nav>li>a{
      font-family: oxygenRegular;
@@ -87,9 +86,7 @@ h3 {
 h4 {
     font-size: 1.3em;
 }
-.nav>li>a{
-    font-family: oxygenRegular;
-}
+
 #homepage p,
 #somos p,
 #hortalizas p,
@@ -238,11 +235,16 @@ div#js-bootstrap-offcanvas {
 .modal-header {
     background-color: #05424a;
     color: #fff;
+<<<<<<< HEAD
     font-family: oxygenLight;
  }
  .form-control{
     font-family: oxygenRegular;
   }
+=======
+}
+
+>>>>>>> parent of b514d7d... Fixing typographies and some content fixes done
 button.close,
 button.close:focus,
 button.close:hover {
