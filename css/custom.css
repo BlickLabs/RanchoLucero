@@ -87,7 +87,9 @@ h3 {
 h4 {
     font-size: 1.3em;
 }
-
+.nav>li>a{
+    font-family: oxygenRegular;
+}
 #homepage p,
 #somos p,
 #hortalizas p,
