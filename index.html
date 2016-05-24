@@ -118,13 +118,14 @@
         <h1><strong>Grupo Lucero</strong> es una empresa <strong>mexicana</strong> dedicada a la <br> <strong>producción</strong> de diferentes alimentos.</h1>
       </div>
 
-      <a href="#sections" class="click-scrolling">
+      
         <div class="mas">
+          <a href="#sections" class="click-scrolling">
           <h5>CONOCE MÁS</h5>
           <span class="glyphicon glyphicon-chevron-down mas-arrow"></span>
           <!--<img class="mas-arrow" src="img/icons/homepage-rancho-lucero-07.png"></img>-->
+          </a>
         </div>
-      </a>
     </div>
   </div>
   <!--/ .jumbotron -->
@@ -276,6 +277,8 @@
 
   <script>
     $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle");
+    $(document).ready(function() {
+    
     $("#myNavbarWeb a,#myNavbarMobile a, .click-scrolling ").on('click', function (event) {
     event.preventDefault();
     var pageRef = $(this).attr("href");
@@ -291,6 +294,8 @@
             window.location.hash = hash;
 
         });
+      }
+    });
    var scroll_start = 0;
    var startchange = $('.portfolio');
    var offset = startchange.offset();
@@ -304,7 +309,6 @@
           console.log("No")
        }
    });
-      }
 }); // Toggle open & close
   </script>
 </body>

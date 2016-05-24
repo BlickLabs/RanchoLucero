@@ -1003,6 +1003,9 @@ h3 {
 .white{
     color: #FFF;
 }
+a, a:active, a:hover, a:visited, a:link{
+    color: #FFF;
+}
 @media(max-width: 480px){
     .header-mobile{
         padding: 15px;
@@ -1045,7 +1048,7 @@ h3 {
         border-right: none;
     }
     .padd-mobile{
-        padding-left: 45px;
+        padding-left: 0px;
     }
     .center{
         text-align: center;
