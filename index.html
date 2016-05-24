@@ -118,13 +118,14 @@
         <h1><strong>Grupo Lucero</strong> es una empresa <strong>mexicana</strong> dedicada a la <br> <strong>producción</strong> de diferentes alimentos.</h1>
       </div>
 
-      <a href="#sections" class="click-scrolling">
+      
         <div class="mas">
+          <a href="#sections" class="click-scrolling">
           <h5>CONOCE MÁS</h5>
           <span class="glyphicon glyphicon-chevron-down mas-arrow"></span>
           <!--<img class="mas-arrow" src="img/icons/homepage-rancho-lucero-07.png"></img>-->
+          </a>
         </div>
-      </a>
     </div>
   </div>
   <!--/ .jumbotron -->
@@ -257,8 +258,8 @@
         <div class="col-md-5 col-sm-6 padd-mobile">
           <div class="Oxygen fourteen no-letter-spacing inline white left links">
             <img src="img/icons/homepage-rancho-lucero-09.png" class="footer-icon-house inline"> <p class="inline footer-mobile">Carretera Gómez Palacio a Gregorio García<br>Km. 11.5 s/n. El Castillo Gómez Palacio, Durango.</p><br>
-            <img src="img/icons/homepage-rancho-lucero-10.png" class="footer-icon-msg inline"> <p class="inline footer-mobile">rtellez@rancholucero.com y helpdesk@rancholucero.com</p><br>
-            <img src="img/icons/homepage-rancho-lucero-11.png" class="footer-icon inline"> <p class="inline footer-mobile">871 180 0038</p>
+            <img src="img/icons/homepage-rancho-lucero-11.png" class="footer-icon-msg inline"> <p class="inline footer-mobile">rtellez@rancholucero.com y helpdesk@rancholucero.com</p><br>
+            <img src="img/icons/homepage-rancho-lucero-10.png" class="footer-icon inline"> <p class="inline footer-mobile">871 180 0038</p>
           </div>
         </div>
       </div>
@@ -276,6 +277,8 @@
 
   <script>
     $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle");
+    $(document).ready(function() {
+    
     $("#myNavbarWeb a,#myNavbarMobile a, .click-scrolling ").on('click', function (event) {
     event.preventDefault();
     var pageRef = $(this).attr("href");
@@ -291,6 +294,8 @@
             window.location.hash = hash;
 
         });
+      }
+    });
    var scroll_start = 0;
    var startchange = $('.portfolio');
    var offset = startchange.offset();
@@ -304,7 +309,6 @@
           console.log("No")
        }
    });
-      }
 }); // Toggle open & close
   </script>
 </body>
