@@ -182,6 +182,16 @@
   <script src="js/mail.js"></script>
 
   <script>
+      $(document).ready(function() {
+      $(document, '#js-bootstrap-offcanvas').on('click, touch', function(){ 
+           if(!$('#js-bootstrap-offcanvas').hasClass('in')){
+              $('#js-bootstrap-offcanvas').removeClass('in')
+           }
+           else{
+            //$('#js-bootstrap-offcanvas').removeClass('in')
+           }
+      });
+    });
     $("#js-bootstrap-offcanvas").trigger("offcanvas.toggle"); // Toggle open & close
   </script>
 </body>
