@@ -799,6 +799,9 @@ h3 {
     #engorda .home-text-right {
         left: 50%;
     }
+    .hortalizas-header.section-subtitle{
+        height: 120px;
+    }
 }
 
 /**********************
@@ -1013,6 +1016,9 @@ h3 {
 .white{
     color: #FFF;
 }
+a, a:active, a:hover, a:visited, a:link{
+    color: #FFF;
+}
 @media(max-width: 480px){
     .header-mobile{
         padding: 15px;
@@ -1055,7 +1061,7 @@ h3 {
         border-right: none;
     }
     .padd-mobile{
-        padding-left: 45px;
+        padding-left: 0px;
     }
     .center{
         text-align: center;
@@ -1227,7 +1233,19 @@ h3 {
     padding-right: 0px;
 }
 .menu-title{
-    padding-left: 15px;
+    padding-left: 30px;
+}
+.nav>li>a{
+    padding-left: 30px;
+}
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    color: #fff;
+    background-color: #1d1d1d;
+}
+.text-right{
+    text-align: left;
+}
 }
 .navbar-offcanvas.navbar-offcanvas-right.offcanvas-transform.in {
     --webkit-transition: all 1s ease-in-out;
